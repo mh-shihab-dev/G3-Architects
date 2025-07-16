@@ -52,7 +52,7 @@ nav {
 nav ul {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 nav ul li {
@@ -93,18 +93,82 @@ nav ul li a {
   margin-bottom: 26px;
 }
 
-.hero-img img{
+.hero-img img {
   width: 100%;
+}
+
+.main {
+  margin-top: 4rem;
+}
+
+.quick-features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.5rem;
+}
+
+.quick-features-left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.quick-features-left img {
+  max-width: 16rem;
+}
+
+.quick-features-right h3 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 53px;
+  color: rgb(114, 114, 114);
+  margin-bottom: 1.5rem;
+}
+
+.quick-features-right p {
+  color: rgb(114, 114, 114);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6rem;
+  margin-bottom: 1.5rem;
 }
 
 /* responsive design */
 @media screen and (max-width: 576px) {
+  nav{
+    flex-direction: column;
+    gap: 12px;
+  }
   .nav-logo {
     width: 100%;
     text-align: center;
   }
-  nav ul {
-    display: none;
+  
+  /* quick features styles */
+  .quick-features{
+    flex-direction: column-reverse;
   }
- 
+
+  .quick-features-left{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .quick-features-right{
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+  .quick-features{
+    flex-direction: column;
+  }
+   nav{
+    flex-direction: column;
+    gap: 12px;
+  }
+  .nav-logo {
+    width: 100%;
+    text-align: center;
+  }
 }
