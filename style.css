@@ -139,7 +139,7 @@ nav ul li a {
   margin-top: 6rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2.5rem;
 }
 
 .will-features-left > h3 {
@@ -177,7 +177,7 @@ nav ul li a {
 }
 
 .will-features-right img {
-  width: 33rem;
+  width: 31rem;
 }
 
 .will-features-right {
