@@ -134,9 +134,76 @@ nav ul li a {
   margin-bottom: 1.5rem;
 }
 
+/* will features */
+.will-features {
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.will-features-left > h3 {
+  color: rgb(19, 19, 19);
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.will-features-left > p {
+  color: rgb(114, 114, 114);
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.will-features-left .box-container .box {
+  padding: 30px 42px 30px 30px;
+}
+
+.will-features-left .box-container .box h4 {
+  color: rgb(19, 19, 19);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.will-features-left .box-container .box p {
+  color: rgb(114, 114, 114);
+  font-size: 0.78rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+}
+
+.will-features-right img {
+  width: 33rem;
+}
+
+.will-features-right {
+  position: relative;
+}
+
+.will-features-right .experience-box {
+  padding: 2.2rem 4rem;
+  background-color: rgb(255, 144, 14);
+  text-align: center;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: -2rem;
+  bottom: -2rem;
+}
+
+.will-features-right .experience-box h5 {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
 /* responsive design */
 @media screen and (max-width: 576px) {
-  nav{
+  nav {
     flex-direction: column;
     gap: 12px;
   }
@@ -144,31 +211,47 @@ nav ul li a {
     width: 100%;
     text-align: center;
   }
-  
+
   /* quick features styles */
-  .quick-features{
+  .quick-features {
     flex-direction: column-reverse;
   }
 
-  .quick-features-left{
-    grid-template-columns: repeat(1,1fr);
+  .quick-features-left {
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .quick-features-right{
+  .quick-features-right {
     text-align: center;
+  }
+  /* will features */
+  .will-features {
+    flex-direction: column;
+  }
+  .will-features-right img {
+    width: 100%;
   }
 }
 
-@media screen and (min-width:577px) and (max-width:992px) {
-  .quick-features{
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .quick-features {
     flex-direction: column;
   }
-   nav{
+  nav {
     flex-direction: column;
     gap: 12px;
   }
   .nav-logo {
     width: 100%;
     text-align: center;
+  }
+
+  /* will features */
+  .will-features {
+    flex-direction: column;
+  }
+
+  .will-features-right img {
+    width: 100%;
   }
 }
