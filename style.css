@@ -8,12 +8,6 @@
   font-family: "Work Sans", sans-serif;
 }
 
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 .container {
   width: 75%;
   margin: 0 auto;
@@ -159,7 +153,7 @@ nav ul li a {
 }
 
 .will-features-left .box-container .box {
-  padding: 30px 42px 30px 30px;
+  padding: 1rem 4rem 1rem 1rem;
 }
 
 .will-features-left .box-container .box h4 {
@@ -176,12 +170,12 @@ nav ul li a {
   line-height: 1.3rem;
 }
 
-.will-features-right img {
-  width: 31rem;
-}
-
 .will-features-right {
   position: relative;
+}
+
+.will-features-right img {
+  width: 31rem;
 }
 
 .will-features-right .experience-box {
@@ -199,6 +193,56 @@ nav ul li a {
   font-size: 1.5rem;
   margin-bottom: 4px;
   font-weight: 700;
+}
+
+/* Some Fact Styles */
+.some-facts {
+  margin: 8rem 0 8rem 0;
+}
+
+.some-facts h3 {
+  color: rgb(19, 19, 19);
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.some-facts p {
+  color: rgb(114, 114, 114);
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.some-facts-box-container {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+}
+
+.some-facts-box-container .box {
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(238, 167, 86);
+  text-align: center;
+  padding: 1.5rem 0;
+  border-radius: 8px;
+}
+
+.some-facts-box-container .box h5 {
+  color: rgb(66, 66, 66);
+  font-size: 2.1rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+.some-facts-box-container .box p {
+  color: rgb(114, 114, 114);
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1rem;
 }
 
 /* responsive design */
@@ -231,6 +275,10 @@ nav ul li a {
   .will-features-right img {
     width: 100%;
   }
+  /* some facts */
+  .some-facts-box-container{
+    grid-template-columns: repeat(1,1fr);
+  }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -253,5 +301,9 @@ nav ul li a {
 
   .will-features-right img {
     width: 100%;
+  }
+   /* some facts */
+  .some-facts-box-container{
+    grid-template-columns: repeat(2,1fr);
   }
 }
